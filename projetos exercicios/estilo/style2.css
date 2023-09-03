@@ -1,0 +1,229 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: "Adroid";
+    src: url(../pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+
+}
+
+/*
+ #c5ebd6
+ #83e1ad
+ #3ddc84
+ #2fa866
+ #1a5c37
+ #063d1e    
+*/
+
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --font-adroid: 'Adroid', sans-serif;
+}
+
+*{
+
+    margin: 0px;
+    padding: 0px
+}
+
+body{
+    background-color: #c5ebd6;
+    font-family: var(--fonte-padrao);
+}
+p{
+    line-height: 1.8em;
+    text-align: justify;
+    margin: 15px 0px 15px 0;
+    text-indent: 15px;
+}
+.externo::before {
+    content: "🔗";
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    padding-top: 40px;
+    text-align: center;
+    min-width: 320px;
+}
+
+header > h1{
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: white; 
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.393);
+}
+header > p{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto ;
+    padding: 0 15px 15px 15px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.393);
+    text-align: inherit;
+    line-height: 1.3em;
+
+
+}
+
+
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418);
+    min-width: 320px;
+}
+nav > a{
+    color: var(--cor1);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    
+
+}
+
+nav >a:hover{ 
+    background-color: var(--cor3) ;
+    color: var(--cor5);
+    transition-duration: 0.4s;
+    
+}
+
+main{
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+main img {
+    width: 100%;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--font-adroid);
+    font-weight: normal;
+    font-size: 1.7em;
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    color: var(--cor5);
+    font-family: var(--font-adroid);
+    font-weight: normal;
+    text-indent:10px;
+    border-radius: 30px;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    border-radius: 4px;
+    padding: 2.5px;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+    
+}
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px 20px 59% 20px;
+    position: relative;
+    
+}
+
+div.video > iframe{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    
+    
+}
+
+aside{
+    line-height: 1.8em;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.215);
+
+}
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: "🗸";
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    background-color: var(--cor5);
+    color: white;
+
+}
+
+footer a {
+    font-weight: bolder;
+    padding: 5px;
+    text-decoration: none;
+    color: palevioletred;
+}
+
+footer a:hover{
+    background-color: pink;
+    border-radius: 4px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
+    text-decoration: underline;
+}
+
+.pequena {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+abbr{
+    text-decoration: underline;
+}
