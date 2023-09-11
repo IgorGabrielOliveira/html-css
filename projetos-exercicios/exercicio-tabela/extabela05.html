@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 90vw;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        caption{
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.473);
+            font-variant: small-caps;
+            font-size: 1.4em;
+        }
+        td, th{
+            border: 2px solid black;
+            padding: 8px;
+        }
+        tr.destaque{
+            background-color: gray;
+        }
+        .cnome{
+            background-color: blue;
+        }
+        .cidade{
+            background-color: red;
+        }
+        .cprof{
+            background-color: green;
+        }
+        .csexo{
+            background-color: aqua;
+        }
+        .pp{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>João Silva</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Engenheiro</td>
+        </tr>
+        
+        <tr>
+            <td>Maria Souza</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Médica</td>
+        </tr>
+        
+        <tr>
+            <td>Carlos Santos</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Advogado</td>
+        </tr>
+        
+        <tr>
+            <td>Laura Fernandes</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Designer</td>
+        </tr>
+        
+        <tr>
+            <td>Ricardo Oliveira</td>
+            <td>M</td>
+            <td>40</td>
+            <td>Professor</td>
+        </tr>
+    </table>
+</body>
+</html>
