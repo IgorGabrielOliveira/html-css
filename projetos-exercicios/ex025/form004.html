@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 04</title>
+</head>
+<body>
+    <h1>Exemplos de Fomulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+                
+        <p>
+            <label for="idemail">Email</label>
+            <input type="email" name="email" id="idemail" required autocomplete="email">  
+          </p>
+          <p>
+              <label for="idtelefone">Telefone</label>
+              <input type="tel" name="telefone" id="idtelefone" autocomplete="tel" required>
+          </p>
+          <!--Estudar mais sobre RegEx (pattern)-->
+          <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Apagar">
+          </p>
+        </fieldset>
+    </form>
+</body>
+</html>
