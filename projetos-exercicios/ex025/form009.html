@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 09</title>
+</head>
+<body>
+    <div>
+        <label for="idnum">Nùmero</label>
+        <input type="range" name="num" id="idnum" min="0" max="10" oninput="idvalue.innerHTML = Number(idnum.value)">
+    </div>
+    <div>
+        <output name="value" id="idvalue">0</output>
+    </div>
+    <div>
+        <label for="idano">Ano que nasceu:</label>
+        <input type="number" name="ano" id="idano" value="2000" oninput="ididade.innerHTML = 2023 - Number(idano.value) "><br>
+        <label for="ididade">Idade</label>
+        <output id="ididade">23</output>
+    </div>
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+    </div>
+</body>
+</html>
