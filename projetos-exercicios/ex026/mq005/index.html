@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries 005</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id="burguer" class='bx bx-menu' style="font-size: 1.3em;" onclick="clickMenu()"></i>
+        <menu id="itens">
             <ul style="list-style: none;">
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -31,7 +33,22 @@
             
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui tempore, at recusandae laborum similique explicabo maiores dignissimos expedita rerum mollitia cum assumenda quam est possimus iste perspiciatis maxime porro? Laudantium.</p>
 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sed possimus atque, quos sit reiciendis iste et. Fugiat ullam est veritatis culpa doloribus, dignissimos repellat impedit qui pariatur nam. Quis!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus dolorum earum optio molestiae velit, nobis accusamus a saepe eum aspernatur aperiam nihil, itaque veritatis? Perspiciatis, aut repudiandae? Inventore, recusandae!</p>
+
         </article>
     </main>
+
+    <script>
+        function clickMenu(){
+            if (itens.style.display == "block"){
+                itens.style.display = "none"
+            } else {
+                itens.style.display = "block"
+            }
+            
+        }
+    </script>
 </body>
 </html>
